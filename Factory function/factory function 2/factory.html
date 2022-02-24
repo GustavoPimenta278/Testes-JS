@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="factory.css">
+    <title>Factory Function 2</title>
+</head>
+<body>
+    
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <div>
+                   <h1>Product List</h1>
+                </div>
+            </div>
+
+            <nav>
+                <li><span><button class="buttonADD" onclick="gerarProduto()"> Gerar Produto</button></span></li>
+                <li><span><button class="button" id="delete-product-btn" onclick="deleteProduct()">MASS DELETE</button></span></li>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main>
+        <section id="product_form">
+            <p>Sku: <input type="text" id="sku"></p>
+            <p><label for="name">Name: </label><input type="text" id="name"></p>
+            <p><label for="price">Price ($): </label><input type="number" id="price"></p>   
+        </section>
+
+        <section id="resultado">
+        
+        </section>
+    </main>
+
+
+
+    <footer>
+        <p>This site was developed by &copy; Peppers.</p>
+    </footer>
+
+    <script src="factory.js"></script>
+</body>
+</html>
