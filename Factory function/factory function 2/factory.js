@@ -1,21 +1,21 @@
-
+let campoSku = document.getElementById('sku')
+let campoNome = document.getElementById('name');
+let campoPreco = document.getElementById('price');
+let resultado = document.getElementById('resultado');
 
 
 function gerarProduto() {
 
-    let campoSku = document.getElementById('sku').value
-    let campoNome = document.getElementById('name').value;
-    let campoPreco = document.getElementById('price').value;
-    let resultado = document.getElementById('resultado');
+    
 
 
     function criaProduto(campoSku, campoNome, campoPreco, ) {
 
         var objetoProduto = {}
 
-        objetoProduto.sku = campoSku;
-        objetoProduto.produtoNome = campoNome;
-        objetoProduto.preco = campoPreco;
+        objetoProduto.sku = campoSku.value;
+        objetoProduto.produtoNome = campoNome.value;
+        objetoProduto.preco = campoPreco.value;
 
         function produto () {
 
@@ -28,15 +28,21 @@ function gerarProduto() {
     }
 
 
-    if (campoSku == '' || campoNome == '' || campoPreco == '') {
-        resultado.innerHTML = 'Dados inválidos! Por favor, verifique os campos.';
+    if (campoSku.value == '' || campoNome.value == '' || campoPreco.value == '') {
+        resultado.innerText = 'Dados inválidos! Por favor, verifique os campos.';
 
     } else {
 
         let produtoCompleto = criaProduto(campoSku, campoNome, campoPreco);
 
-        resultado.innerHTML = produtoCompleto.informacoes();
+        resultado.innerText = produtoCompleto.informacoes();
     }
 }
 
-    
+function deleteProduct() {
+    campoSku.value = ''
+    campoNome.value = ''
+    campoPreco.value = ''
+
+    resultado.innerText = ''
+}
