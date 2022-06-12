@@ -1,0 +1,51 @@
+body {
+    background-color: rgba(0, 0, 0, 0.849);
+}
+
+
+.conteudo , .conteudo1 , .clear {
+    color: rgba(255, 255, 255, 0.884);
+    background-color: rgba(0, 225, 255, 0.11);
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    border: solid rgb(17, 255, 17) 3px;
+    margin: 10px;
+    
+}
+
+
+.conteudo1 {
+    color: rgba(255, 255, 255, 0.884);
+    background-color: rgba(40, 3, 247, 0.11);
+    border-radius: 10px;
+    border: solid rgb(17, 255, 17) 3px;
+
+}
+
+.clear {
+    float: none;
+    width: 700px;
+    padding: 3px;
+    height: auto;
+    clear: both;
+}
+
+
+
+select{
+    margin: 20px 10px;
+    text-decoration: none;
+    font: Arial;
+    background-color: rgba(0, 0, 0, 0.164);
+    border: solid 1.5px purple;
+    color: white;
+    padding: 5px 2px 5px 0;
+}
+
+option {
+    color: black;
+}
